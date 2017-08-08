@@ -1,6 +1,11 @@
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
+.banner {
+  width: 100%;
+  height: 250px;
+}
+
 .nav-logo {
   width: 36px;
   margin-left: 20px;
