@@ -2,5 +2,19 @@
 @import 'bootstrap';
 
 .nav-logo {
-  width: 32px;
+  width: 36px;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.navbar-toggle {
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-logo {
+    position: absolute;
+    margin-right: 13px;
+    left: 50%;
+  }
 }
