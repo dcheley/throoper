@@ -3,10 +3,13 @@
 
 .nav-logo {
   width: 36px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .navbar-toggle {
   float: left;
+  border: none;
 }
 
 .navbar-default .navbar-nav {
@@ -23,5 +26,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  
+  .navbar-default .navbar-nav > li {
+    width: 100%;
+  }
 }
