@@ -15,8 +15,10 @@
 
 .nav-logo {
   width: 36px;
-  margin-left: 20px;
-  margin-right: 20px;
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  float: left;
 }
 
 .navbar-toggle {
@@ -31,8 +33,8 @@
     display: inline-block;
     float: none;
     > a {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 25px;
+      padding-right: 25px;
       color: $light-grey;
     }
   }
