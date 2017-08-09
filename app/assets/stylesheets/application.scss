@@ -86,6 +86,12 @@ a:focus {
   width: 22px;
 }
 
+.container {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 80px;
+}
+
 @media screen and (max-width: 768px) {
   .navbar-default .navbar-nav > li {
     width: 100%;
