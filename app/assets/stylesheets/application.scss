@@ -95,8 +95,19 @@ a:focus {
   margin-bottom: 80px;
 }
 
+#twitch-embed iframe {
+  width: 90%;
+}
+
 @media screen and (max-width: 768px) {
   .navbar-default .navbar-nav > li {
     width: 100%;
+  }
+
+  .nav-logo {
+    position: relative;
+    float: none;
+    top: 0;
+    left: 0;
   }
 }

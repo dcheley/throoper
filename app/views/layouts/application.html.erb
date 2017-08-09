@@ -22,9 +22,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
+            <%= link_to image_tag('throoper-logo.png', class:"nav-logo"), "/" %>
             <li class="<%= current_page?('/') ? 'active' : 'nav-link' %>"><a href="/">HOME</a></li>
             <li class="<%= current_page?('/pages/youtube') ? 'active' : 'nav-link' %>"><a href="/pages/youtube">YOUTUBE</a></li>
-            <%= link_to image_tag('throoper-logo.png', class:"nav-logo"), "/" %>
             <li class="<%= current_page?('/pages/vods') ? 'active' : 'nav-link' %>"><a href="/pages/vods">VODS</a></li>
             <li class="<%= current_page?('/pages/blogs') ? 'active' : 'nav-link' %>"><a href="/pages/blogs">BLOGS</a></li>
           </ul>
