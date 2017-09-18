@@ -111,11 +111,28 @@ a:focus {
   width: 30%;
   margin-left: 1.65%;
   margin-right: 1.65%;
+  margin-bottom: 50px;
 }
 
 .client-logo {
   width: 90%;
   height: 80px;
+}
+
+.blog-image {
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.center-wrap {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.blog-text {
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {
