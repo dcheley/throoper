@@ -133,9 +133,18 @@ a:focus {
   text-align: center;
   width: 80%;
   margin: auto;
+  margin-bottom: 60px;
 }
 
-.blog-text {
+.big-blog-image {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 500px;
+}
+
+.blog-text,
+.paragraph,
+.blog-list {
   text-align: left;
 }
 
