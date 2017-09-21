@@ -181,10 +181,21 @@ iframe {
   border-radius: 180px;
 }
 
+#title {
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#form-container {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 //Grid
 @mixin grid($column) {
-  width:(100% / 12) * $column;
-  margin:0 auto;
+  width: (100% / 12) * $column;
+  margin: 0 auto;
 }
 
 // Transition Ease
@@ -205,7 +216,7 @@ form {
     position: relative;
     margin-bottom: 15px;
 
-		$hover-label-width: 18%;
+		$hover-label-width: 20%;
     $placeholder-bumper: 1.5%;
     $label-padding: 18px;
 
@@ -224,9 +235,8 @@ form {
 
       // Checkmark
       + span {
-        font-family: 'SSStandard';
         opacity: 0;
-        color: white;
+        color: black;
       	display: block;
         position: absolute;
         top: 12px;
@@ -240,19 +250,19 @@ form {
   	// Fields
   	input[type="text"],
     textarea {
-      border:none;
+      border: none;
       background: lightgrey;
-      width: 100% - $hover-label-width - $placeholder-bumper;
+      width: 100%;
       margin: 0;
       padding: $label-padding 0;
       padding-left: $hover-label-width + $placeholder-bumper;
-      color:blue;
+      color: blue;
       font-size: 1.4em;
       letter-spacing: 0.05em;
       text-transform: uppercase;
 
       &#msg {
-        height: 18px;
+        height: 64px;
         resize: none;
         @include ease(333ms);
       }
@@ -273,7 +283,7 @@ form {
         }
       }
 
-  		// JS Toggle Class
+      // JS Toggle Class
       &.focused {
         + label {
           color: orange;

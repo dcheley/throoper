@@ -1,5 +1,12 @@
+//= require jquery
 //= require rails-ujs
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
-//= require jquery
-//= require bootstrap-sprockets
+// Input Lock
+
+$('.field input').blur(function () {
+  if (!$(this).val()) {
+    $('.field').addClass('focused');
+  }
+});
