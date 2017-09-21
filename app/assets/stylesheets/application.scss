@@ -72,21 +72,28 @@ a:focus {
   text-align: center;
 }
 
-.footer-link {
+.footer-link,
+.active-footer {
   display: inline-block;
   padding: 5px 10px;
 }
 
-.footer-link a {
+.footer-link a,
+.active-footer a {
   color: $light-grey;
 }
 
-.footer-link a:hover {
+.footer-link a:hover,
+.active-footer a:hover {
   color: $dark-grey;
 }
 
 .footer-icon {
   width: 22px;
+}
+
+.active-footer {
+  text-decoration: underline;
 }
 
 .container {
@@ -150,6 +157,28 @@ iframe {
 .paragraph,
 .blog-list {
   text-align: left;
+}
+
+.quarter,
+.three-quarters {
+  float: left;
+  font-size: 18px;
+}
+
+.quarter {
+  width: 20%;
+  margin-left: 5%;
+}
+
+.three-quarters {
+  width: 65%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 180px;
 }
 
 @media screen and (max-width: 768px) {
