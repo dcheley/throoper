@@ -1,29 +1,35 @@
 <div class='blog-section'>
   <%= link_to image_tag('dex.jpg', class:'client-logo'), 'https://www.dexerto.com/author/throoper/', target:'_blank' %>
 
-  <%= image_tag('snakebite-626x314.jpg', class:'blog-image') %>
-  <div class='center-wrap'>
-    <b><p class='blog-text'>Esports Player of the Year: Snakebite</p></b>
-    <p class='blog-text'>September 4th, 2017</p>
-  </div>
+  <%= link_to 'dexerto-1', class:'blog-link' do %>
+    <%= image_tag('snakebite-626x314.jpg', class:'blog-image') %>
+    <div class='center-wrap'>
+      <b><p class='blog-text'>Esports Player of the Year: Snakebite</p></b>
+      <p class='blog-text'>September 4th, 2017</p>
+    </div>
+  <% end %>
 </div>
 
 <div class='blog-section'>
   <%= link_to image_tag('pv.png', class:'client-logo'), 'http://www.paravine.com/author/throoper/', target:'_blank' %>
 
-  <%= image_tag('kontrol-768x425.jpg', class:'blog-image') %>
-  <div class='center-wrap'>
-    <b><p class='blog-text'>Kontrol Freek Alpha Edge Thumbsticks Product Review</p></b>
-    <p class='blog-text'>September 12th, 2017</p>
-  </div>
+  <%= link_to 'paravine-1', class:'blog-link' do %>
+    <%= image_tag('kontrol-768x425.jpg', class:'blog-image') %>
+    <div class='center-wrap'>
+      <b><p class='blog-text'>Kontrol Freek Alpha Edge Thumbsticks Product Review</p></b>
+      <p class='blog-text'>September 12th, 2017</p>
+    </div>
+  <% end %>
 </div>
 
 <div class='blog-section'>
   <%= link_to image_tag('wg.png', class:'client-logo'), 'https://inside.worldgaming.com/?s=dave+throop', target:'_blank' %>
 
-  <%= image_tag('Eu_LCS.jpg', class:'blog-image') %>
-  <div class='center-wrap'>
-    <b><p class='blog-text'>European Mid Season Power Rankings</p></b>
-    <p class='blog-text'>February 26th, 2015</p>
-  </div>
+  <%= link_to 'worldgaming-1', class:'blog-link' do %>
+    <%= image_tag('Eu_LCS.jpg', class:'blog-image') %>
+    <div class='center-wrap'>
+      <b><p class='blog-text'>European Mid Season Power Rankings</p></b>
+      <p class='blog-text'>February 26th, 2015</p>
+    </div>
+  <% end %>
 </div>
