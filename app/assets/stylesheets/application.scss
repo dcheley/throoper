@@ -102,7 +102,7 @@ a:focus {
   margin-bottom: 80px;
 }
 
-iframe {
+#lone-vid {
   margin-bottom: 60px;
 }
 
@@ -144,12 +144,12 @@ iframe {
   text-align: center;
   width: 80%;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .big-blog-image {
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 500px;
 }
 
@@ -183,7 +183,7 @@ iframe {
 #title {
   text-transform: uppercase;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #form-container {
@@ -214,12 +214,10 @@ form {
     width: 100%;
     position: relative;
     margin-bottom: 15px;
-
 		$hover-label-width: 20%;
     $placeholder-bumper: 1.5%;
     $label-padding: 18px;
 
-		// Label
     label {
       text-transform: uppercase;
       position: absolute;
