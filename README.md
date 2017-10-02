@@ -2,19 +2,14 @@
 
 IN PROGRESS - Dave Throop's Website
 
-Dexerto: 19
+Change font
+Directly link blogs (add urls to current 3)
+Copy blogs
+Separate Youtube videos
+Recolour navs similar style to https://rlewisreports.com/
 
-Paravine: 13
-
-World Gaming: ??
-
-How does + work in SASS?
-How does & work?
-How does ease work? grid?
-Double check Codepen for +/&/./:/etc
-
-Name
-Email
-Phone
+Setup db & contact form with model/controller
 Message (500 max?)
 - Automate email to dave also
+
+Refactoring SCSS code, moving blog content into hidden folder, adding layout margins & sizing/spacing blog elements

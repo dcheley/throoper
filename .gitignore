@@ -19,6 +19,7 @@
 
 .DS_Store
 
+/blogs_archive
 /node_modules
 /yarn-error.log
 

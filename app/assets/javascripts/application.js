@@ -3,10 +3,15 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
-// Input Lock
 
-$('.field input').blur(function () {
-  if (!$(this).val()) {
-    $('.field').addClass('focused');
+$('textarea').blur(function () {
+  $this = $(this);
+  if ( $this.value != '' ) {
+    $this.addClass('focused');
+    alert('input read');
+  }
+  else {
+    $this.removeClass('focused');
+    alert('nothing input');
   }
 });
