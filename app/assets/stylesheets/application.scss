@@ -136,7 +136,8 @@ a:focus {
 }
 
 .blog-image {
-  width: 80%;
+  max-height: 135px;
+  width: 75%;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -147,7 +148,7 @@ a:focus {
 
 .center-wrap {
   text-align: center;
-  width: 80%;
+  width: 75%;
   margin: auto;
   margin-bottom: 20px;
 }
