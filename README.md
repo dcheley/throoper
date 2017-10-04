@@ -3,8 +3,6 @@
 IN PROGRESS - Dave Throop's Website
 
 Change font
-Directly link blogs (add urls to current 3)
-Copy blogs
 Separate Youtube videos
 Recolour navs similar style to https://rlewisreports.com/
 
