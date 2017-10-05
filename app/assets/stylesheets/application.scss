@@ -1,3 +1,4 @@
+@import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'variables';
 
@@ -182,6 +183,7 @@ a:focus {
 .three-quarters {
   float: left;
   font-size: 18px;
+  margin-bottom: 80px;
 }
 
 .quarter {
@@ -326,9 +328,19 @@ form {
   color: red;
 }
 
+@media screen and (max-width: 639px) {
+  .blog-text {
+    font-size: 11px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar-default .navbar-nav > li {
     width: 100%;
+  }
+
+  .navbar-default .navbar-nav {
+    margin: 10px 0;
   }
 
   .nav-logo {
@@ -336,5 +348,22 @@ form {
     float: none;
     top: 0;
     left: 0;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .three-quarters,
+  .quarter {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .quarter {
+    margin-bottom: 20px;
+  }
+
+  .three-quarters {
+    margin-bottom: 60px;
   }
 }
