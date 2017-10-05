@@ -1,4 +1,3 @@
-@import "bootstrap-sprockets";
 @import 'bootstrap';
 @import 'variables';
 
@@ -208,7 +207,7 @@ a:focus {
 }
 
 #form-container {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -232,6 +231,7 @@ form {
   @include grid(7);
 
   .field {
+    position: relative;
     width: 100%;
     position: relative;
     margin-bottom: 15px;
@@ -249,19 +249,6 @@ form {
       font-weight: 200;
       letter-spacing: 0.075em;
       @include ease(333ms);
-
-      // Checkmark ('+' means that only the span directly following the relevant field is styled)
-      + span {
-        opacity: 0;
-        color: $dark-purple;
-      	display: block;
-        position: absolute;
-        top: 12px;
-        left: 7%;
-        font-size: 2.5em;
-        text-shadow: 1px 2px 0 darkorange;
-        @include ease(333ms);
-      }
     }
 
   	// Fields
@@ -330,6 +317,13 @@ form {
       color: $dark-purple;
     }
   }
+}
+
+.error-list {
+  list-style: none;
+  margin-bottom: 15px;
+  padding-left: 0;
+  color: red;
 }
 
 @media screen and (max-width: 768px) {

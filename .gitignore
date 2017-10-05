@@ -18,6 +18,7 @@
 !/tmp/.keep
 
 .DS_Store
+/config/secrets.yml
 
 /blogs_archive
 /node_modules

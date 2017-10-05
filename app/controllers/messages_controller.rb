@@ -6,13 +6,15 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
 
-    if @message.save
-      MessageMailer.new_message(@message).deliver_later
-      format.html { redirect_to(new_message_url, notice: "Thanks for reaching out!") }
-      format.json { render json: new_message_url, status: :created, location: new_message_url }
-    else
-      format.html { render 'new' }
-      format.json { render json: @message.errors, status: :unprocessable_entity }
+    respond_to do |format|
+      if @message.save
+        MessageMailer.new_message(@message).deliver_later
+        format.html { redirect_to(new_message_url, notice: "Thanks for reaching out!") }
+        format.json { render json: new_message_url, status: :created, location: new_message_url }
+      else
+        format.html { render 'new' }
+        format.json { render json: @message.errors, status: :unprocessable_entity }
+      end
     end
   end
 
