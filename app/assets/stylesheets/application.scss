@@ -299,13 +299,6 @@ form {
           color: $banner-purple;
         }
       }
-
-      // JS Toggle Class
-      &.focused {
-        + label {
-          color: orange;
-        }
-      }
     }
 
   	// Field Hover
@@ -335,11 +328,6 @@ form {
 		&:hover {
       background: $light-grey;
       color: $dark-purple;
-    }
-
-		&:focus {
-      outline: none;
-      background: darkorange;
     }
   }
 }

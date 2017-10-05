@@ -4,14 +4,19 @@
 //= require turbolinks
 //= require_tree .
 
-$('textarea').blur(function () {
-  $this = $(this);
-  if ( $this.value != '' ) {
-    $this.addClass('focused');
-    alert('input read');
-  }
-  else {
-    $this.removeClass('focused');
-    alert('nothing input');
-  }
+$(document).on('turbolinks:load', function() {
+  var $inputOne = $('input[type="text"]');
+  var $inputTwo = $('#msg');
+
+  $inputOne.on('blur', function() {
+    if (this.value != '') {
+      $(this).addClass('focused');
+    }
+  });
+
+  $inputTwo.on('blur', function() {
+    if (this.value != '') {
+      $(this).addClass('focused');
+    }
+  });
 });
