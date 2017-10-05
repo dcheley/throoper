@@ -1,0 +1,32 @@
+<section id="form-container">
+  <h1 id='title'>Contact Me</h1>
+
+  <%= form_for(@message) do |f| %>
+    <% if @message.errors.any? %>
+      <h4 class="error-header"><%= pluralize(@message.errors.count, "error") %> occurred!</h4>
+
+      <ul class="error-list">
+        <% @message.errors.full_messages.each do |msg| %>
+          <li class="error-msg"><%= msg %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <div class="field">
+      <%= f.text_field :name, placeholder:"Who are you?" %>
+      <%= f.label :name %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :email, placeholder:"email@address.com" %>
+      <%= f.label :email %>
+    </div>
+
+    <div class="field">
+      <%= f.text_area :msg, id:"msg", placeholder:"Your message goes here..." %>
+      <%= f.label :msg %>
+    </div>
+
+    <%= f.submit "send", class:"button" %>
+  <% end %>
+</section>
