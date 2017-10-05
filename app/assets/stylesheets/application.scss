@@ -19,6 +19,10 @@ a:focus {
   border: none;
 }
 
+.navbar-default li {
+  display: inline-block;
+}
+
 .nav-logo {
   width: 36px;
   position: absolute;
@@ -48,9 +52,12 @@ a:focus {
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus  {
-  background-color: $dark-grey;
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .nav-link > a:hover,  {
+  background-color: black;
   color: white;
+  border-left: 1px $grey solid;
+  border-right: 1px $grey solid;
 }
 
 .footer {
@@ -74,28 +81,17 @@ a:focus {
   text-align: center;
 }
 
-.footer-link,
-.active-footer {
+.footer-link {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 8px;
 }
 
-.footer-link a,
-.active-footer a {
+.footer-link {
   color: $light-grey;
-}
-
-.footer-link a:hover,
-.active-footer a:hover {
-  color: $dark-grey;
 }
 
 .footer-icon {
   width: 22px;
-}
-
-.active-footer {
-  text-decoration: underline;
 }
 
 .container {
