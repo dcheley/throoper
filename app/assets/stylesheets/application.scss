@@ -52,12 +52,16 @@ a:focus {
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .nav-link > a:hover,  {
+.navbar-default .navbar-nav > .active > a:focus  {
   background-color: black;
   color: white;
   border-left: 1px $grey solid;
   border-right: 1px $grey solid;
+}
+
+.navbar-default .navbar-nav > .nav-link > a:hover {
+  color: $dark-grey;
+  background-color: $light-grey;
 }
 
 .footer {
