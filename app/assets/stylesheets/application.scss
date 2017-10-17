@@ -118,6 +118,10 @@ a:focus {
   margin-bottom: 60px;
 }
 
+#hp-vid {
+  margin-top: 30px;
+}
+
 #twitch-embed iframe {
   width: 90%;
 }
@@ -180,6 +184,7 @@ a:focus {
 .header {
   text-align: left;
   font-size: 16px;
+  border-bottom: 2px solid $banner-purple
 }
 
 .big-blog-image {
