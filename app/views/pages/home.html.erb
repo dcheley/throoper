@@ -39,15 +39,15 @@
   <!-- Tweets -->
   <div class='center-wrap'>
     <p class='header'>TWITTER</p>
-  </div>
 
-    <%= link_to 'https://www.dexerto.com/news/esports-players-of-the-year-snakebite-halo/33773', class:'blog-link', target:'_blank' do %>
-      <%= image_tag('dex-snakebite.jpg', class:'blog-image') %>
-      <div class='center-wrap'>
-        <b><p class='blog-text'>Esports Player of the Year: Snakebite</p></b>
-        <p class='blog-text'>September 4th, 2017</p>
-      </div>
-    <% end %>
+    <a class="twitter-timeline"
+      href="https://twitter.com/David_Throop"
+      data-tweet-limit="10">
+      Tweets by @ThroopeR
+    </a>
+
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
 </div>
 
 <!-- Load the Twitch embed script -->
@@ -55,9 +55,9 @@
 
 <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
 <script type="text/javascript">
- new Twitch.Embed("twitch-embed", {
-  //  width: 1060,
-   height: 420,
-   channel: "throoper"
- });
+  new Twitch.Embed("twitch-embed", {
+    //  width: 1060,
+     height: 420,
+     channel: "throoper"
+   });
 </script>
